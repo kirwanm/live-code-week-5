@@ -16,16 +16,15 @@
   <body>
     <div class="container" id="app">
       <!-- Logout button and notification for success / error event -->
-      <div class="row my-3">
+      <div class="row my-3" id="logoutPage">
         <button id="btn-logout" class="btn btn-primary ml-auto">Logout</button>
       </div>
 
       <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
-        Your notification goes here
       </div>
 
       <!-- This is Login Form  -->
-      <div>
+      <div id="loginPage">
         <h1>Login</h1>
         <form class="my-4">
           <div class="form-group">
@@ -33,8 +32,8 @@
             <input
               type="email"
               class="form-control"
-              name="email"
-              id="email"
+              name="emailLogin"
+              id="emailLogin"
               required
             />
           </div>
@@ -43,21 +42,21 @@
             <input
               type="password"
               class="form-control"
-              name="password"
-              id="password"
+              name="passwordLogin"
+              id="passwordLogin"
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-primary" id="loginBtn">
             Submit
           </button>
-          <button type="submit" class="btn btn-info">
+          <button type="submit" class="btn btn-info" id="loginRegisterBtn">
             Register
           </button>
         </form>
       </div>
 
-      <div>
+      <div id="registerPage">
         <h1>Register</h1>
         <form class="my-4">
           <div class="form-group">
@@ -75,8 +74,8 @@
             <input
               type="email"
               class="form-control"
-              name="email"
-              id="email"
+              name="emailReg"
+              id="emailReg"
               required
             />
           </div>
@@ -85,42 +84,30 @@
             <input
               type="password"
               class="form-control"
-              name="password"
-              id="password"
+              name="passwordReg"
+              id="passwordReg"
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-primary" id="registerBtn">
             Submit
           </button>
-          <button type="submit" class="btn btn-warning">
+          <button type="submit" class="btn btn-warning" id="registerRandomBtn">
             Random User
           </button>
-          <button type="submit" class="btn btn-info">
+          <button type="submit" class="btn btn-info" id="registerLoginBtn">
             Login
           </button>
         </form>
-      <ist -->
-      <div>
+      </div>
+
+      <div id="listComic">
         <h1>Comic Collection</h1>
-        <div class="row my-4">
-          <!-- Each of comic will have one of this card -->
-          <div class="col-4 mb-4">
-            <div class="card text-center">
-              <img
-                src="https://www.idwpublishing.com/wp-content/uploads/2018/10/aHR0cDovL3d3dy5uZXdzYXJhbWEuY29tL2ltYWdlcy9pLzAwMC8yNDAvNzQ0L29yaWdpbmFsL1NwaWRlcm1hbjAxX2N2ckEuanBn.jpeg"
-                class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">The Amazing Spiderman - new Avengers</h5>
-                <p class="card-text">Author: J Michael S</p>
-                <button class="btn btn-primary">Edit</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+      </div>  
 
       <!-- This is form page to update a comic -->
-      <div>
+      <div id="updateComic">
         <h1>Update Comic</h1>
         <form class="my-4">
           <div class="form-group">
@@ -139,7 +126,11 @@
             Submit
           </button>
         </form>
-      </di>
-    </div>
+      </div>
+    <!-- end of update a comic -->
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   </body>
 </html>
